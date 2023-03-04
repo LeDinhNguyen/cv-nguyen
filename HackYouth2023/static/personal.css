@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("img/zyro-image.png");
+    background-blend-mode: darken;
+    backdrop-filter: blur(10px);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.spree {
+    font-size: 3em;
+    color: rgba(212, 160, 42, 1);
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnRegister-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    margin-left: 40px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.navigation .btnRegister-popup:hover {
+    /* background: rgba(245, 245, 245, 0.54); */
+    background: black;
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #434C6F;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container.text-center {
+    width: 1400px;
+    text-align: center;
+}
+
+.container.text-center .head {
+    font-size: 2em;
+}
+
+.container.text-center .lines p {
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+.open-account .btn {
+    width: 130px;
+    height: 45px;
+    border: 2px solid #fff;
+    background-color: rgba(212, 160, 42, 1);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.6s;
+}
+
+.open-account .btn:hover {
+    background: black;
+    color: white;
+}
