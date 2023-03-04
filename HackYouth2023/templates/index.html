@@ -1,36 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>SPREE</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="/">SPREE</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="/about">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/instruction">Instruction</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/main_function">Main Function</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Welcome to the App</h1>
-			<p class="lead">This is a simple web app for the hackathon preparation.</p>
-			<hr class="my-4">
-			<p>Please use the links in the navbar to navigate to the other pages.</p>
-		</div>
-	</div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <p class="spree"><a href="/">SPREE</a></p>
+      <nav class="navigation">
+        <a href="/about">About</a>
+        <a href="/instruction">Instruction</a>
+        <a href="/login">Login</a>
+        <button
+          class="btnRegister-popup"
+          id="btn"
+          onclick="location.href = '/signup'"
+        >
+          Register
+        </button>
+      </nav>
+    </header>
+    <div class="container text-center">
+      <div class="head">
+        <h1>
+          YOU WANT TO <br />
+          TRACK YOUR <br />
+          GROCERY SHOPPING LIST?
+        </h1>
+      </div>
+
+      <div class="lines">
+        <p>
+          <span>
+            The best way to reduce food waste is to avoid creating it in the
+            first place, and a bit of planning can help you do just that
+          </span>
+        </p>
+      </div>
+
+      <div class="open-account">
+        <button class="btn" onclick="location.href = 'signup'">
+          Open an account
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

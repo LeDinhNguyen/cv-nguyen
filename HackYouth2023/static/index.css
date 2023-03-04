@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("img/zyro-image.png");
+    background-blend-mode: darken;
+    backdrop-filter: blur(10px);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+
+.spree a {
+    font-size: 3em;
+    color: rgba(212, 160, 42, 1);
+    user-select: none;
+    text-decoration: none;
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btnRegister-popup {
+    width: 130px;
+    height: 50px;
+    background: rgba(212, 160, 42, 1);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: black;
+    margin-left: 40px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.navigation .btnRegister-popup:hover {
+    color: #fff;
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #434C6F;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.container.text-center {
+    width: 1400px;
+    text-align: center;
+}
+
+.container.text-center .head {
+    font-size: 2em;
+}
+
+.container.text-center .lines p {
+    width: 50%;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+
+.open-account .btn {
+    width: 130px;
+    height: 45px;
+    border: 2px solid #fff;
+    background-color: rgba(212, 160, 42, 1);
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    transition: 0.6s;
+}
+
+.open-account .btn:hover {
+    color: white;
+}
+
+/* Login Page */
+.wrapper {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    background: rgba(200, 200, 200, 0.54);
+    border: 2px solid rgba(245, 245, 245, 0.54);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form-box {
+    width: 80%;
+}
+
+.form-box h2 {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-box label {
+    width: 100%;
+    height: 25%;
+}
+.input-box input {
+    background: transparent;
+    width: 100%;
+    height: 200%;
+    border: 2px solid #162938;
+    border-radius: 6px;
+    outline: none;
+}
+
+.remember-forgot p {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.btnLogin {
+    width: 100%;
+    background: rgba(212, 160, 42, 1);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.login-register p {
+    color: #162938;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login-register p a {
+    align-items: right;
+}
