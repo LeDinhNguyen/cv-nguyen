@@ -5,7 +5,7 @@ app = Flask("__name__")
 
 @app.route("/")
 def personal():
-    return render_template("personal.html")
+    return render_template("index.html")
 
 
 @app.route("/about")
@@ -18,9 +18,14 @@ def instruction():
     return render_template("instruction.html")
 
 
-@app.route("/main_function")
-def main_instruction():
-    return render_template("main_function.html")
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+@app.route("/signup")
+def signuo():
+    return render_template("signup.html")
+
 
 
 if __name__ == "__main__":
