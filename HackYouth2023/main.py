@@ -22,10 +22,10 @@ def instruction():
 def login():
     return render_template("login.html")
 
+
 @app.route("/signup")
 def signuo():
     return render_template("signup.html")
-
 
 
 if __name__ == "__main__":
