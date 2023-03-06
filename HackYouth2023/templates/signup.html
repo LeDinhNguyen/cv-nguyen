@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Base page</title>
     <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='index.css') }}"
-    />
+        rel="stylesheet"
+        href="{{ url_for('static', filename='index.css') }}"
+        />
   </head>
   <body>
     <header>
@@ -18,18 +18,59 @@
         <a href="/instruction">Instruction</a>
         <a href="/login">Login</a>
         <button
-          class="btnRegister-popup"
-          id="btn"
-          onclick="location.href = '/signup'"
-        >
-          Register
+            class="btnRegister-popup"
+            id="btn"
+            onclick="location.href = '/signup'"
+            >
+            Register
         </button>
       </nav>
     </header>
-
-    <div class="warapper">
-      <div class="form-box"></div>
+    <div class="wrapper">
+      <div class="form-box">
+        <h2>Register</h2>
+        <form>
+          <div class="input-box">
+            <label>
+              Last Name
+              <input type="text" required />
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              First Name
+              <input type="text" required />
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              Email
+              <input type="email" required />
+            </label>
+          </div>
+          <div class="input-box">
+            <label>
+              Password
+              <input type="password" required />
+            </label>
+          </div>
+        </form>
+        <div class="remember-forgot">
+          <p>
+          <label>
+            <input type="checkbox" />
+            I agree to the term and conditions
+          </label>
+          </p>
+        </div>
+        <button type="submit" class="btnSignup">Register</button>
+        <div class="register-login">
+          <p>
+          Already have an account?
+          <a class="login-link" href="login">Login</a>
+          </p>
+        </div>
+      </div>
     </div>
-    <h1>Signup Page</h1>
   </body>
 </html>
